@@ -1,0 +1,141 @@
+*{
+    --content2:#1a4175;
+    --content1: #dedede;
+}
+.outlineC2{
+    background-color: transparent;
+    color: var(--content2);
+}
+.outlineC2:hover{
+    animation: C2gradient 1000ms;
+    color: white;
+    background-color: var(--content2) 
+}
+@keyframes C2gradient{
+    From{
+        background-color: transparent;
+        color: var(--content2);
+
+    }
+    To{
+        background-color: var(--content2);
+        color: white;
+    }
+}
+body{
+    background-color: #1a4175;
+}
+.hidden{
+    visibility: hidden;
+}
+.undefined{
+    display: none;
+}
+.c2{
+    background-color: var(--content2);
+    color: var(--content1);
+    z-index: 900;
+}
+.c1{
+    background-color: var(--content1);
+    z-index: 900;
+    color: var(--content2);
+}
+.contentTitle{
+    font-size:60px;
+    text-align: center;
+    width: 100%;
+}
+body{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#corp{
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+}
+/* -------------------------------------------------------------------- */
+#header{
+    z-index: 1200;
+    color:var(--content2);
+    font-weight: 500;
+    background-color: white;
+    border-bottom: 1px solid var(--content2);
+}
+.sticky {
+    position: fixed;
+    height: auto;
+    top: 0;
+    width: 100%;
+}  
+#logo{
+    border-right: 1px solid grey;
+    margin-left: 20px;
+    padding-right: 2%;
+}
+#el1:hover, #el2:hover, #el3:hover, #el4:hover{
+    text-decoration: underline;
+}
+#el1,#el2,#el3,#el4,#el5,#el6,#el7{
+    color: #1a4175;
+}
+#top{
+    background-color:white;
+    height: 99%;
+    z-index: 900;
+    overflow: hidden;
+}
+#searchField{
+    border-color: var(--content2);
+}
+#connectDiv{
+    font-size: 13px;
+    line-height: 10px;
+    margin-top: 10px;
+    width: 70px;
+    text-align: center;
+}
+
+#connectDiv:hover{
+    transform: scale(0.95);
+}
+#connect:active{
+    transform: scale(0.90);
+}
+#citation{
+  color: var(--content2);
+  font-size: 30px;
+}
+.typewriter{
+  text-align: center;
+  overflow: hidden;
+  border-right: .15em solid black; 
+  white-space: nowrap;
+  font-style: italic;
+  max-width: fit-content;
+  margin: 0 auto;
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 80% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--content2); }
+}
